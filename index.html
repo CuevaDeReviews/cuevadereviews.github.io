@@ -11,5 +11,24 @@
 
 <h5>
   <img src="9.12.png" alt="hades review" width="50" style="vertical-align: middle; margin-right: 10px;">
-  <button style="vertical-align: middle;">Hades es un roguelite de accion en el cual controlas a Zagreo...</button>
+  
+  <button onclick="toggleReview()" style="vertical-align: middle; cursor: pointer;">
+    Hades es un roguelite de accion en el cual controlas a Zagreo...
+  </button>
 </h5>
+
+<div id="texto-resenia" style="display: none; margin-top: 15px; padding: 10px; border-left: 3px solid #ccc; font-family: sans-serif;">
+  <p>...quien intenta escapar del Inframundo gobernado por su padre, Hades. El juego destaca por su frenético sistema de combate, una narrativa brillante donde cada muerte avanza la historia y una banda sonora espectacular. ¡Un imprescindible absoluto!</p>
+</div>
+
+<script>
+function toggleReview() {
+  var texto = document.getElementById("texto-resenia");
+  // Si está oculto, lo muestra. Si está visible, lo vuelve a ocultar.
+  if (texto.style.display === "none") {
+    texto.style.display = "block";
+  } else {
+    texto.style.display = "none";
+  }
+}
+</script>
